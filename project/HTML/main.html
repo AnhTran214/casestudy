@@ -6,20 +6,30 @@
 </head>
 <body>
     <div>
-        <form>
             <h3>
                 Quản lý học sinh
             </h3>
-            <label for="id">STT </label><input id="id" style="width: 50px"> &nbsp;
-            <label for="name">Họ và tên </label><input id="name"> &nbsp;
-            <label for="dob">Ngày tháng năm sinh </label><input id="dob"> &nbsp;
-            <label for="gender">Giới tính </label><input id="gender"> &nbsp;
-            <label for="street">Địa chỉ </label><input id="street"> &nbsp;
-            <label for="class">Lớp </label><input id="class"> &nbsp;
-            <button type="button" onclick="">Thêm mới +</button>
-            <br><br>
-            <label id="view"></label>
-        </form>
+            <div  style="display: block" id="add">
+                <label for="id">STT </label><input id="id" style="width: 50px"> &nbsp;
+                <label for="name">Họ và tên </label><input id="name"> &nbsp;
+                <label for="dob">Ngày tháng năm sinh </label><input id="dob"> &nbsp;
+                <label for="gender">Giới tính </label><input id="gender"> &nbsp;
+                <label for="street">Địa chỉ </label><input id="street"> &nbsp;
+                <label for="class">Lớp </label><input id="class"> &nbsp;
+                <button type="button" onclick="add()">Thêm mới +</button>
+            </div>
+            <br>
+            <div id="view"></div>
+            <dialog id="editValue" style="width: 50%">
+                    <label for="idEdit">STT </label><input id="idEdit" disabled><br><br>
+                    <label for="nameEdit">Họ và tên </label><input id="nameEdit"> <br><br>
+                    <label for="dobEdit">Ngày tháng năm sinh </label><input id="dobEdit"> <br><br>
+                    <label for="genderEdit">Giới tính </label><input id="genderEdit"> <br><br>
+                    <label for="streetEdit">Địa chỉ </label><input id="streetEdit"> <br><br>
+                    <label for="classEdit">Lớp </label><input id="classEdit"> <br><br>
+                    <button type="button" onclick="edit()" id="btEdit">Cập nhật</button> &nbsp;
+                    <button type="button" onclick="dialogCancel()">Hủy</button>
+            </dialog>
     </div>
 </body>
 </html>
