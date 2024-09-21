@@ -2,40 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main</title>
+    <title>Trang chủ</title>
 </head>
 <body>
-    <div>
-            <h3>
-                Quản lý học sinh
-            </h3>
-        <dialog id="addValue" style="width: 50%">
-            <label for="id">STT </label><input id="id" style="width: 50px"> <br><br>
-            <label for="name">Họ và tên </label><input id="name"> <br><br>
-            <label for="dob">Ngày tháng năm sinh </label><input id="dob"> <br><br>
-            <label for="gender">Giới tính </label><input id="gender"> <br><br>
-            <label for="street">Địa chỉ </label><input id="street"> <br><br>
-            <label for="class">Lớp </label><input id="class"> <br><br>
-            <button type="button" onclick="add()">Thêm</button> &nbsp;
-            <button type="button" onclick="dialogCancelAdd()">Hủy</button>
-        </dialog>
-            <img src="../IMG/54481.png" height="20" width="20"/> &nbsp;
-            <input id="search" placeholder="Nhập tên cần tìm" style="width: 20%" oninput="checkSearch(this.value)"> &nbsp;
-            <button type="button" onclick="dialogShowAdd()">Thêm mới +</button>
-            <br>
-            <br>
-            <div id="view"></div>
-            <dialog id="editValue" style="width: 50%">
-                    <label for="idEdit">STT </label><input id="idEdit" disabled><br><br>
-                    <label for="nameEdit">Họ và tên </label><input id="nameEdit"> <br><br>
-                    <label for="dobEdit">Ngày tháng năm sinh </label><input id="dobEdit"> <br><br>
-                    <label for="genderEdit">Giới tính </label><input id="genderEdit"> <br><br>
-                    <label for="streetEdit">Địa chỉ </label><input id="streetEdit"> <br><br>
-                    <label for="classEdit">Lớp </label><input id="classEdit"> <br><br>
-                    <button type="button" onclick="edit()" id="btEdit">Cập nhật</button> &nbsp;
-                    <button type="button" onclick="dialogCancelEdit()">Hủy</button>
-            </dialog>
+    <div style="text-align: center">
+        <h1>Trang chủ</h1>
+        <a href="student_screen.html"><button>
+            Quản lý học sinh
+        </button></a> &nbsp;
+        <a href="teacher_screen.html"><button>
+            Quản lý giáo viên
+        </button></a>
     </div>
 </body>
 </html>
-<script src="../JS/main.js"></script>
